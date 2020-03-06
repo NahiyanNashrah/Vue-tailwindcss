@@ -1,0 +1,308 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 600px;
+  box-sizing: content-box;
+  border-radius: 2px;
+  background-color: #f5f6f7;
+  box-shadow: 0 2px 8px 0 #c5cdd4;
+}
+.home {
+  box-sizing: content-box;
+  background-color: #ffffff;
+  border-radius: 2px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.home-element {
+  color: #152934;
+  font-family: "Uni Neue";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.home-icon {
+  width: 10px;
+  transform: scaleX(-1) rotate(-90deg);
+  background-color: #5a6872;
+}
+.consignment {
+  margin-top: 8px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.consignment-title {
+  color: #5a6872;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+.consignment-id {
+  color: #152934;
+  font-family: "Uni Neue";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-right: 0.5px;
+}
+.consignment-img {
+  display: inline-block;
+}
+.shipping {
+  margin-top: 8px;
+  padding-left: 24px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.shipping-title {
+  padding-top: 27px;
+  color: #5a6872;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+.shipping-info {
+  padding-right: 24px;
+  padding-top: 24px;
+  text-align: right;
+}
+
+.shipping-contact {
+  color: #152934;
+  font-family: "Uni Neue";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.shipping-address {
+  margin-top: 8px;
+  color: #5a6872;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 24px;
+}
+.timeline {
+  height: 566px;
+  width: 600px;
+  margin-top: 8px;
+  padding-left: 24px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.timeline-title {
+  padding-top: 24px;
+  color: #152934;
+  font-family: "Uni Neue";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.timeline-img {
+  height: 140px;
+  width: 544px;
+  box-shadow: 0 2px 8px 0 #408bcc;
+  box-sizing: content-box;
+  margin-top: 24px;
+}
+.timeline-details {
+  height: 264px;
+  width: 544px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.timeline-details .item {
+  height: 40px;
+  width: 544px;
+  border-left: 4px solid #e83330;
+  padding-left: 12px;
+  margin-bottom: 16px;
+}
+.item > .title {
+  height: 20px;
+  width: 528px;
+  color: #152934;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 20px;
+}
+.time {
+  margin-top: 4px;
+  height: 16px;
+  width: 101px;
+  color: #8c9ba5;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.load-more {
+  margin-top: 16px;
+  margin-left: 233px;
+}
+.load-more-title {
+  height: 20px;
+  width: 68px;
+  color: #e83330;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.load-more-icon {
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  /* background-color: #e83330; */
+}
+.product {
+  padding-top: 24px;
+  height: 198px;
+  width: 600px;
+  margin-top: 8px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.product-description {
+  padding-left: 24px;
+}
+.product-title {
+  color: #152934;
+  font-family: "Uni Neue";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+.product-.list {
+  margin-top: 16px;
+}
+.item {
+  color: #152934;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 20px;
+}
+.receipt {
+  padding-right: 24px;
+}
+.receipt-cash {
+  box-sizing: border-box;
+  height: 20px;
+  width: 121px;
+  border: 1px solid #43a047;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.receipt-cash1 {
+  height: 14px;
+  width: 89px;
+  color: #43a047;
+  font-family: "Uni Neue";
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 14px;
+}
+.receipt-title {
+  padding-right: 101px;
+  color: #152934;
+  font-family: "Uni Neue";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.receipt-details {
+  margin-top: 16px;
+}
+.element {
+  margin-bottom: 12px;
+}
+.element-name {
+  color: #152934;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 20px;
+}
+.dotted-separator {
+  height: 4px;
+  width: 280px;
+  box-sizing: border-box;
+  border-top: 1px dashed #cccccc;
+  border-bottom: 1px dashed #cccccc;
+}
+.total {
+  height: 20px;
+  width: 32px;
+  color: #152934;
+  font-family: "Uni Neue";
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.total-price {
+  height: 24px;
+  width: 53px;
+  color: #152e3b;
+  font-family: "Uni Neue";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: right;
+}
+.merchant {
+  height: 128px;
+  width: 600px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+.merchant-title {
+  color: #152934;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  /* padding-top: 16px;
+  padding-left: 16px; */
+}
+.merchant-info {
+  margin-top: 8px;
+}
+.merchant-logo {
+  box-sizing: content-box;
+  height: 64px;
+  width: 64px;
+  border: 0.73px solid #f5f6f7;
+  border-radius: 1.45px 1.45px 0 0;
+  margin-left: 16px;
+  float: left;
+  margin-right: 16px;
+}
+.merchant-details {
+  /* display: inline; */
+}
+.merchant-name {
+  height: 24px;
+  width: 248px;
+  color: #e83330;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+.merchant-description {
+  height: 18px;
+  width: 248px;
+  color: #152934;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 18px;
+}
