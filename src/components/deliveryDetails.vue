@@ -28,7 +28,48 @@
     </div>
     <div class="timeline">
       <p class="timeline-title">Timeline</p>
-      <div class="timeline-img"></div>
+      <div class="timeline-img flex flex-row justify-between">
+        <div class="timeline-img-item">
+          <div class="timestamp">
+            <div class="box"></div>
+          </div>
+          <div class="status">
+            <p class="text">Confirm</p>
+          </div>
+        </div>
+        <div class="timeline-img-item">
+          <div class="timestamp">
+            <div class="box"></div>
+          </div>
+          <div class="status">
+            <p class="text">Picked-up</p>
+          </div>
+        </div>
+        <div class="timeline-img-item">
+          <div class="timestamp">
+            <div class="box"></div>
+          </div>
+          <div class="status">
+            <p class="text">In Transit</p>
+          </div>
+        </div>
+        <div class="timeline-img-item">
+          <div class="timestamp">
+            <div class="box"></div>
+          </div>
+          <div class="status">
+            <p class="text">Out for Delivery</p>
+          </div>
+        </div>
+        <div class="timeline-img-item">
+          <div class="timestamp">
+            <div class="box"></div>
+          </div>
+          <div class="status">
+            <p class="text">Return</p>
+          </div>
+        </div>
+      </div>
       <div class="timeline-details flex-col">
         <div class="item">
           <p class="title">Your order has been picked-up!</p>
