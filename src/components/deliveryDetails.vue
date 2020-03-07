@@ -2,22 +2,20 @@
   <div class="container">
     <div class="home">
       <span class="home-element">Home</span>
-      <span>&#62;</span>
+      <img src="../assets/resource/symbol.svg" alt class="home-icon" />
       <span class="home-element">Tracking</span>
-      <span>&#62;</span>
+      <img src="../assets/resource/symbol.svg" alt class="home-icon" />
       <span class="home-element">Delivery Details</span>
     </div>
-    <div class="consignment flex flex-row justify-between">
-      <span class="consignment-title">Consignment Id</span>
+    <div class="consignment">
+      <p class="consignment-title">Consignment Id</p>
       <div>
         <span class="consignment-id">{{ order.id }}</span>
         <img class="consignment-img" src="../assets/resource/ic_copy.svg" />
       </div>
     </div>
-    <div class="shipping flex flex-row justify-between">
-      <div class="shipping-title w-1/4">
-        <p>Shipping Info</p>
-      </div>
+    <div class="shipping">
+      <p class="shipping-title w-1/4">Shipping Info</p>
       <div class="shipping-info w-1/2">
         <p class="shipping-contact">{{ user.phone }}</p>
         <div class="shipping-address">
@@ -28,49 +26,29 @@
     </div>
     <div class="timeline">
       <p class="timeline-title">Timeline</p>
-      <div class="timeline-img flex flex-row justify-between">
-        <div class="timeline-img-item">
-          <div class="timestamp">
-            <div class="box"></div>
-          </div>
-          <div class="status">
-            <p class="text">Confirm</p>
-          </div>
+      <div class="timeline-img">
+        <div class="status">
+          <img src="../assets/resource/shipped.svg" class="box" />
+          <p class="text">Confirm</p>
         </div>
-        <div class="timeline-img-item">
-          <div class="timestamp">
-            <div class="box"></div>
-          </div>
-          <div class="status">
-            <p class="text">Picked-up</p>
-          </div>
+        <div class="status">
+          <img src="../assets/resource/truck.svg" class="box" />
+          <p class="text">Picked-up</p>
         </div>
-        <div class="timeline-img-item">
-          <div class="timestamp">
-            <div class="box"></div>
-          </div>
-          <div class="status">
-            <p class="text">In Transit</p>
-          </div>
+        <div class="status">
+          <img src="../assets/resource/shipped.svg" class="box" />
+          <p class="text">In Transit</p>
         </div>
-        <div class="timeline-img-item">
-          <div class="timestamp">
-            <div class="box"></div>
-          </div>
-          <div class="status">
-            <p class="text">Out for Delivery</p>
-          </div>
+        <div class="status">
+          <img src="../assets/resource/truck.svg" class="box" />
+          <p class="text">Out for Delivery</p>
         </div>
-        <div class="timeline-img-item">
-          <div class="timestamp">
-            <div class="box"></div>
-          </div>
-          <div class="status">
-            <p class="text">Return</p>
-          </div>
+        <div class="status">
+          <img src="../assets/resource/shipped.svg" class="box" />
+          <p class="text">Return</p>
         </div>
       </div>
-      <div class="timeline-details flex-col">
+      <div class="timeline-details">
         <div class="item">
           <p class="title">Your order has been picked-up!</p>
           <p class="time">March 1,2020,10:00</p>
@@ -97,38 +75,44 @@
         <span class="load-more-title">Load more</span>
       </div>
     </div>
-    <div class="product flex flex-row justify-between">
-      <div class="w-1/2 product-description">
+    <div class="product">
+      <div class="w-1/2">
         <p class="product-title">Product Description</p>
         <div class="product-list">
-          <p class="item">01 Black Tshirt</p>
-          <p class="item">02 Knee Guard</p>
+          <p class="product-list-item">01 Black Tshirt</p>
+          <p class="product-list-item">02 Knee Guard</p>
         </div>
       </div>
-      <div class="w-1/2 receipt">
-        <p class="receipt-title">Receipt</p>
+      <div class="w-1/2">
+        <div class="receipt">
+          <p class="receipt-title">Receipt</p>
+          <button class="receipt-cash">
+            <img src="../assets/resource/ic_cash.svg" class="receipt-cash-icon" />
+            Cash On Delivery
+          </button>
+        </div>
         <div class="receipt-details">
-          <div class="element flex flex-row justify-between">
+          <div class="element">
             <p class="element-name">Product price</p>
             <p>&#2547; 700</p>
           </div>
-          <div class="element flex flex-row justify-between">
+          <div class="element">
             <p class="element-name">Delivery Charge</p>
             <p>&#2547; 60</p>
           </div>
           <p class="element dotted-separator"></p>
-          <div class="element flex flex-row justify-between">
+          <div class="element">
             <p class="total">Total</p>
-            <p class="total-price">&#2547; 600</p>
+            <p class="total-price">&#2547; 760</p>
           </div>
         </div>
       </div>
     </div>
     <div class="merchant">
       <p class="merchant-title">Seller Info</p>
-      <div class="merchant-info flex flex-row items-center">
+      <div class="merchant-info">
         <img src="../assets/resource/logo.png" class="merchant-logo" />
-        <div class="merchant-details">
+        <div>
           <p class="merchant-name">{{merchant.name}}</p>
           <p class="merchant-description">{{ merchant.description }}</p>
         </div>

@@ -3,13 +3,11 @@
   margin-left: auto;
   margin-top: 10px;
   width: 600px;
-  box-sizing: content-box;
   border-radius: 2px;
   background-color: #f5f6f7;
   box-shadow: 0 2px 8px 0 #c5cdd4;
 }
 .home {
-  box-sizing: content-box;
   background-color: #ffffff;
   border-radius: 2px;
   padding-left: 24px;
@@ -24,18 +22,18 @@
   line-height: 24px;
 }
 .home-icon {
+  display: inline-block;
   width: 10px;
-  transform: scaleX(-1) rotate(-90deg);
-  background-color: #5a6872;
+  height: 6px;
 }
 .consignment {
   margin-top: 8px;
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 24px;
+  padding: 20px 24px;
   border-radius: 2px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .consignment-title {
   color: #5a6872;
@@ -56,20 +54,20 @@
 }
 .shipping {
   margin-top: 8px;
-  padding-left: 24px;
+  padding: 24px;
   border-radius: 2px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .shipping-title {
-  padding-top: 27px;
   color: #5a6872;
   font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
 }
 .shipping-info {
-  padding-right: 24px;
-  padding-top: 24px;
   text-align: right;
 }
 
@@ -86,13 +84,12 @@
   font-family: Roboto;
   font-size: 14px;
   line-height: 20px;
-  padding-bottom: 24px;
 }
 .timeline {
-  height: 566px;
   width: 600px;
   margin-top: 8px;
   padding-left: 24px;
+  padding-bottom: 24px;
   border-radius: 2px;
   background-color: #ffffff;
 }
@@ -109,88 +106,68 @@
   width: 544px;
   height: 140px;
   margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.box {
-  box-sizing: border-box;
-  width: 40px;
-  height: 40px;
-  border: 1px dashed #8c9ba5;
-  padding: 6px;
-}
-.timeline-img:before {
-  top: 63%;
-  width: 85%;
-  left: 8%;
-  content: "";
-  border: 1px dashed #8c9ba5;
-  position: absolute;
-}
-.timeline-img-item {
+.status {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 64px;
 }
-.li.complete {
-  transition: all 200ms ease-in;
-  width: 64;
+.box {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.timeline-img:before {
+  top: 58%;
+  width: 85%;
+  left: 8%;
+  content: "";
+  border: 1px dashed #8c9ba5;
+  position: absolute;
 }
 .text {
-  height: 20px;
-  width: 64px;
+  height: 40px;
   color: #152934;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   text-align: center;
-}
-.timestamp {
-  margin-bottom: 20px;
-  font-weight: 100;
-  height: 60px;
-}
-
-.status {
+  padding-top: 10px;
+  position: relative;
   width: 64px;
   padding-top: 19px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  transition: all 200ms ease-in;
 }
-.status:before {
+.text:before {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background-color: white;
-  border-radius: 24px;
-  border: 1px solid #ddd;
+  border-radius: 20px;
   position: absolute;
-  top: -15px;
-  transition: all 200ms ease-in;
-}
-
-.timeline-img .status:before {
+  top: -10px;
+  left: 22px;
   content: url("../resource/tick.svg");
-  border: none;
-  transition: all 200ms ease-in;
 }
 .timeline-details {
   height: 264px;
   width: 544px;
-  margin-top: 24px;
   margin-bottom: 16px;
 }
-.timeline-details .item {
+.item {
   height: 40px;
   width: 544px;
   border-left: 4px solid #e83330;
   padding-left: 12px;
   margin-bottom: 16px;
 }
-.item > .title {
+.title {
   height: 20px;
   width: 528px;
   color: #152934;
@@ -225,18 +202,17 @@
   display: inline-block;
   height: 8px;
   width: 12px;
-  /* background-color: #e83330; */
 }
 .product {
-  padding-top: 24px;
+  padding: 24px;
   height: 198px;
   width: 600px;
   margin-top: 8px;
   border-radius: 2px;
   background-color: #ffffff;
-}
-.product-description {
-  padding-left: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .product-title {
   color: #152934;
@@ -246,17 +222,27 @@
   line-height: 30px;
   margin-bottom: 16px;
 }
-.product-.list {
+.product-list {
   margin-top: 16px;
 }
-.item {
+.product-list-item {
   color: #152934;
   font-family: Roboto;
   font-size: 14px;
   line-height: 20px;
 }
 .receipt {
-  padding-right: 24px;
+  padding-right: 77px;
+  display: flex;
+  align-items: center;
+}
+.receipt-title {
+  color: #152934;
+  font-family: "Uni Neue";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-right: 16px;
 }
 .receipt-cash {
   box-sizing: border-box;
@@ -265,29 +251,28 @@
   border: 1px solid #43a047;
   border-radius: 4px;
   background-color: #ffffff;
-}
-.receipt-cash1 {
-  height: 14px;
-  width: 89px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
   color: #43a047;
   font-family: "Uni Neue";
   font-size: 10px;
   font-weight: bold;
   line-height: 14px;
 }
-.receipt-title {
-  padding-right: 101px;
-  color: #152934;
-  font-family: "Uni Neue";
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 30px;
+.receipt-cash-icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
 }
 .receipt-details {
   margin-top: 16px;
 }
 .element {
   margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .element-name {
   color: #152934;
@@ -337,11 +322,12 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  /* padding-top: 16px;
-  padding-left: 16px; */
 }
 .merchant-info {
   margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .merchant-logo {
   box-sizing: content-box;
@@ -352,9 +338,6 @@
   margin-left: 16px;
   float: left;
   margin-right: 16px;
-}
-.merchant-details {
-  /* display: inline; */
 }
 .merchant-name {
   height: 24px;
